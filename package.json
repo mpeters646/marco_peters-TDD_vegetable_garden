@@ -1,0 +1,25 @@
+{
+  "name": "marco_peters-tdd_vegetable_garden",
+  "version": "1.0.0",
+  "description": "Final assignment: The TDD vegetable garden",
+  "main": "vegetable garden.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --WatchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpeters646/marco_peters-TDD_vegetable_garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpeters646/marco_peters-TDD_vegetable_garden/issues"
+  },
+  "homepage": "https://github.com/mpeters646/marco_peters-TDD_vegetable_garden#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
