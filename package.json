@@ -5,7 +5,7 @@
   "main": "vegetable garden.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --WatchAll",
+    "test:watch": "jest --Watch",
     "test:coverage": "jest --coverage"
   },
   "repository": {
