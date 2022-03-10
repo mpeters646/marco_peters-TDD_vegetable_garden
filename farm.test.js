@@ -61,7 +61,6 @@ describe('getCostsForCrop', () => {
   test('Calculate the cost for a crop corn', () => {
     const corn = {
       name: 'corn',
-      yield: 3,
       cost: 1,
     };
     const input = {
@@ -75,7 +74,6 @@ describe('getCostsForCrop', () => {
   test('Calculate the cost for a crop pumpkin', () => {
     const pumpkin = {
       name: 'pumpkin',
-      yield: 5,
       cost: 1.5,
     };
     const input = {
@@ -84,5 +82,35 @@ describe('getCostsForCrop', () => {
     };
 
     expect(getCostsForCrop(input)).toBe(22.5);
+  });
+});
+
+describe('getRevenueForCrop', () => {
+  test('Calculate the revenue for a crop corn (without environmental factors)', () => {
+    const corn = {
+      name: 'corn',
+      yield: 3,
+      cost: 1,
+    };
+    const input = {
+      crop: corn,
+      numCrops: 15,
+    };
+
+    expect().toBe();
+  });
+
+  test('Calculate the revenue for a crop pumpkin (without environmental factors)', () => {
+    const pumpkin = {
+      name: 'pumpkin',
+      yield: 5,
+      cost: 1.5,
+    };
+    const input = {
+      crop: pumpkin,
+      numCrops: 15,
+    };
+
+    expect().toBe();
   });
 });
