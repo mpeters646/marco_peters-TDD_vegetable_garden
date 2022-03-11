@@ -21,6 +21,14 @@ const getProfitForCrop = (input) => {
   return getYieldForCrop(input) - getCostsForCrop(input);
 };
 
+const getTotalProfit = ({ input }) => {
+  return input
+    .map((crop) => getProfitForCrop(crop))
+    .reduce((total, current) => {
+      return total + current;
+    });
+};
+
 module.exports = {
   getYieldForPlant,
   getYieldForCrop,
@@ -28,4 +36,5 @@ module.exports = {
   getCostsForCrop,
   getRevenueForCrop,
   getProfitForCrop,
+  getTotalProfit,
 };
